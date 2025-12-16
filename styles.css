@@ -1,5 +1,4 @@
 @media (max-width: 1440px) {
-}
 
 body
 {
@@ -116,3 +115,67 @@ body
 .attribution a { 
     color: hsl(240, 36%, 85%); 
 }
+}
+
+/* Add mobile-first responsive design */
+@media (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+    
+    .rating-state, .thank-ou-state {
+        width: 100%;
+        max-width: 327px;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+    
+    .rating-state h1 {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+    
+    .rating-state p, .thank-ou-state p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .rating-buttons {
+        margin: 24px 0;
+    }
+    
+    .rating-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 12px 0;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    
+    .thank-ou-state {
+        min-height: auto;
+        padding: 34px 24px 37px;
+    }
+    
+    .thank-ou-state h3 {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+    
+    .rating-result img {
+        width: 144px;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .rating-result div {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 24px 0 32px;
+    }
+}
+
