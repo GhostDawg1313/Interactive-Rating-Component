@@ -1,0 +1,118 @@
+@media (max-width: 1440px) {
+}
+
+body
+{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0
+}
+.rating-state, .thank-ou-state
+{
+    background-color: hsl(214, 20%, 16%);
+    border-radius: 15px;
+    color: hsl(217, 12%, 63%);
+    padding: 30px;
+    text-align: left;
+    width: 300px;
+}
+.thank-ou-state
+{
+    text-align: center;
+    min-height: 350px;
+}
+.rating-state h1, .rating-state h2, .thank-ou-state h3
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.rating-buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    
+}
+.rating-btn
+{
+    background-color:  hsl(213, 22%, 28%);
+    border: none;
+    border-radius: 50%;
+    color: hsl(216, 17%, 70%);
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.rating-btn.selected
+{
+    background-color: hsl(180, 7%, 97%);
+    color: hsl(0, 0%, 1%);
+}
+.rating-btn:hover:not(.selected)
+{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.submit-btn
+{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 6%, 3%);
+    font-weight: 800;
+    /*make all caps*/
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.submit-btn.active
+{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 1%);
+}
+.rating-result div
+{
+    background-color: hsl(213, 22%, 24%);
+    border: 1px solid hsl(213, 22%, 28%);
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px 0;
+}
+.icon-container
+{
+    background-color: hsl(214, 19%, 22%);
+    border-radius: 50%;
+    border: solid 1px hsl(213, 22%, 28%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution { 
+    color: hsl(217, 17%, 72%);
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.attribution a { 
+    color: hsl(240, 36%, 85%); 
+}
